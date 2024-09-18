@@ -103,6 +103,12 @@ th {
     cursor: pointer;
 }
 
+.cat-container {
+    display: flex;
+    justify-content: center;
+}
+
+
 .cat-image:hover {
     transform: scale(1.05);
 }
