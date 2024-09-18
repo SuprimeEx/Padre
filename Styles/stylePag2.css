@@ -1,0 +1,174 @@
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Variables de colores */
+:root {
+    --primary-color: #005b96;
+    --secondary-color: #ffd700;
+    --background-color: #f4f4f9;
+    --section-background: #ffffff;
+    --text-color: #333333;
+    --accent-color: #ff6f61;
+    --border-color: #ddd;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    margin: 20px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: var(--section-background);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+p, ul {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 1em;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.cat-image {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cat-image:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+#cat-clicker {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#cat-clicker:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .cat-image {
+        width: 80%;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+}
